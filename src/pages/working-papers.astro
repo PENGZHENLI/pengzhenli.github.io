@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { workingPapers, workInProgress } from '../data/papers';
+---
+
+<BaseLayout title="Working Papers — Pengzhen Li">
+  <h2 class="text-xl font-semibold">Working Papers</h2>
+
+  <ol class="mt-6 space-y-4 list-none pl-0">
+    {
+      workingPapers.map((p, i) => (
+        <li class="flex gap-3">
+          <span class="text-neutral-400 w-6 shrink-0 tabular-nums">[{i + 1}]</span>
+          <div>
+            <div class="font-medium">
+              {p.url ? <a href={p.url}>{p.title}</a> : p.title}
+            </div>
+            <div class="text-sm text-neutral-600">{p.authors}</div>
+            {p.note && <div class="text-sm italic text-neutral-600">{p.note}</div>}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+
+  <h2 class="text-xl font-semibold mt-12">Work in Progress</h2>
+  <ul class="mt-6 space-y-3 list-none pl-0">
+    {
+      workInProgress.map((p) => (
+        <li>
+          <div class="font-medium">{p.title}</div>
+          <div class="text-sm text-neutral-600">{p.authors}</div>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

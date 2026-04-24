@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --serif: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  font-family: var(--serif);
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+body {
+  line-height: 1.65;
+}
+
+a {
+  color: #0b5fa5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #063d6b;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+nav a {
+  text-decoration: none;
+}

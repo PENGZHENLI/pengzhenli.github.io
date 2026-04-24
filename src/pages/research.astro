@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { presentations } from '../data/presentations';
+---
+
+<BaseLayout title="Research — Pengzhen Li">
+  <h2 class="text-xl font-semibold">Research</h2>
+  <p class="mt-4 text-neutral-800">
+    My research applies econometrics and data-driven modeling to questions in
+    international trade, environmental economics, and supply-chain economics.
+    I work with causal inference, panel-data and time-series methods, and
+    optimization under uncertainty.
+  </p>
+
+  <h3 class="text-lg font-semibold mt-10">Fields</h3>
+  <ul class="mt-3 list-disc pl-6 text-neutral-800 space-y-1">
+    <li>Applied econometrics and causal inference</li>
+    <li>International trade policy</li>
+    <li>Environmental and energy economics</li>
+    <li>Agricultural and bio-energy supply chains</li>
+  </ul>
+
+  <h3 class="text-lg font-semibold mt-10">Methods</h3>
+  <p class="mt-3 text-neutral-800">
+    Panel threshold models, synthetic control, GMM, structural equation modeling,
+    threshold VAR / VECM / multivariate GARCH, Data Envelopment Analysis,
+    mixed-integer programming, stochastic and extended mathematical programming,
+    supervised and unsupervised machine learning.
+  </p>
+
+  <h3 class="text-lg font-semibold mt-10">Selected Projects</h3>
+  <ul class="mt-3 list-disc pl-6 text-neutral-800 space-y-2">
+    <li>
+      Forest-residue-based sustainable aviation fuel supply chains across the
+      Southeast U.S. (NIFA-USDA; FAA ASCENT).
+    </li>
+    <li>
+      Trade restrictiveness indices under discriminatory tariffs; cooperative
+      tariff negotiation via Shapley value.
+    </li>
+    <li>
+      Green technology innovation and CO<sub>2</sub> emissions across income
+      levels (panel threshold models).
+    </li>
+  </ul>
+
+  <h3 class="text-lg font-semibold mt-12">Presentations</h3>
+  <ul class="mt-4 list-none pl-0 space-y-4">
+    {
+      presentations.map((t) => (
+        <li>
+          <div class="font-medium">{t.title}</div>
+          <div class="text-sm italic text-neutral-600">{t.venue}</div>
+          <div class="text-sm text-neutral-600">
+            {t.location} · {t.year}
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
