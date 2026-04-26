@@ -12,7 +12,7 @@ export const workingPapers: Paper[] = [
   },
   {
     title:
-      "The Impact of Mayoral Endorsements on Presidential Election Outcomes",
+      "A Mean-Field Game of Mayoral Endorsements: Theory and Evidence from Brazil and France",
     authors: "with Matt Van Essen and Luiz Lima",
     note: "2024 J. Fred and Wilma Holly Award (best 2nd-year paper)",
     url: "/files/Mayoral_Endorsements_Presidential.pdf",
