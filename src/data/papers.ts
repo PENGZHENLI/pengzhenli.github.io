@@ -15,6 +15,7 @@ export const workingPapers: Paper[] = [
       "The Impact of Mayoral Endorsements on Presidential Election Outcomes",
     authors: "with Matt Van Essen and Luiz Lima",
     note: "2024 J. Fred and Wilma Holly Award (best 2nd-year paper)",
+    url: "/files/Mayoral_Endorsements_Presidential.pdf",
   },
   {
     title:
