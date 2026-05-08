@@ -3,6 +3,7 @@ export type Paper = {
   authors: string;
   note?: string;
   url?: string;
+  slidesUrl?: string;
 };
 
 export const workingPapers: Paper[] = [
@@ -24,8 +25,10 @@ export const workingPapers: Paper[] = [
   },
   {
     title:
-      "Stochastic Optimisation of Logging Residue–based Biofuel Supply Chains Considering Feedstock Ash Content and Biofuel Price",
-    authors: "with T. Yu et al.",
+      "Welfare Analysis of a Forest-Residue Sustainable Aviation Fuel Supply Chain under Endogenous Demand and Price Uncertainty",
+    authors: "with T. Edward Yu",
+    url: "/files/Welfare_Forest_Residue_SAF.pdf",
+    slidesUrl: "/files/Welfare_Forest_Residue_SAF_slides.pdf",
   },
 ];
 
