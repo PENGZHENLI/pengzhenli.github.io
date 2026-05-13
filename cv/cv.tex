@@ -1,0 +1,165 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\small Pengzhen Li \textbf{\textperiodcentered} CV \textbf{\textperiodcentered} \thepage\ of \pageref{LastPage}}
+
+\titleformat{\section}
+  {\large\bfseries}{}{0pt}{}[\vspace{2pt}\titlerule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{16pt}{6pt}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+\setlist[itemize]{itemsep=2pt, topsep=2pt, leftmargin=1.2em}
+
+\newcommand{\entry}[2]{%
+  \par\noindent\hbox to \linewidth{\strut #1\hfill #2}\par
+}
+
+\newcommand{\pubitem}[5]{%
+  \item ``#1.'' #2. \textit{#3}, #4#5.%
+}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+  {\huge\bfseries Pengzhen Li}\\[6pt]
+  Department of Economics, Haslam College of Business\\
+  University of Tennessee, Knoxville\\[3pt]
+  \href{mailto:pli26@vols.utk.edu}{pli26@vols.utk.edu}
+  \quad\textbar\quad
+  +1 (865) 266--5815
+  \quad\textbar\quad
+  \href{https://pengzhenli.github.io/}{pengzhenli.github.io}
+\end{center}
+
+\section*{Education}
+
+\entry{\textbf{Ph.D.\ in Economics}, University of Tennessee, Knoxville}{Jan 2020 -- May 2027 (expected)}
+\entry{\textbf{M.A.\ in Finance}, Shandong University, China}{Sep 2016 -- Jun 2018}
+\entry{\textbf{B.A.\ in Economics}, Tongji University, Shanghai, China}{Sep 2011 -- Jun 2015}
+
+\section*{Research Fields}
+
+Trade Policy; Environmental Economics
+
+\section*{Publications}
+
+\begin{enumerate}[leftmargin=2em, label={[\arabic*]}]
+  \pubitem{Spatial optimization of the sustainable aviation fuel supply chains from forest residues via fast pyrolysis/hydrotreatment considering feedstock ash content variability}{With T.~Yu et al}{Biomass and Bioenergy}{208 (2026)}{, 108793}
+  \pubitem{Assessing the impact of preprocessing and conversion technologies on the sustainable aviation fuel supply from forest residues in the Southeast USA}{With T.~Yu et al}{Transportation Research Record}{2678(9) (2024)}{, 639--654}
+  \pubitem{Beef price spread relationship with processing capacity utilization}{With C.~Martinez et al}{Journal of the Agricultural and Applied Economics Association}{2(1) (2023)}{, 133--145}
+  \pubitem{Do green technology innovations contribute to carbon dioxide emission reduction? Empirical evidence from patent data}{With K.~Du and Z.~Yan}{Technological Forecasting and Social Change}{146 (2019)}{, 297--303}
+\end{enumerate}
+
+\section*{Working Papers}
+
+\begin{enumerate}[leftmargin=2em, label={[\arabic*]}]
+  \item ``Trade Restrictiveness Indices with Discriminatory Tariffs.'' With James Lake.
+  \item ``A Mean-Field Game of Mayoral Endorsements: Theory and Evidence from Brazil and France.'' With Matt Van Essen and Luiz Lima.\\
+  \textit{2024 J.~Fred and Wilma Holly Award (best 2nd-year paper).}
+  \item ``Welfare Analysis of a Forest-Residue Sustainable Aviation Fuel Supply Chain under Endogenous Demand and Price Uncertainty.'' With T.~Edward Yu.
+  \item ``Sustainable Aviation Fuel Production from Forest Residues with Ash Content: A Case Study of Nashville Airport.'' With T.~Yu et al.
+\end{enumerate}
+
+\section*{Work in Progress}
+
+\begin{itemize}
+  \item ``Cooperative Multilateral Tariff Negotiations: A Quantitative Analysis Using Shapley Value.'' With Georg Schaur.
+\end{itemize}
+
+\section*{Presentations}
+
+\begin{itemize}
+  \item Midwest Economic Theory and International Trade Meetings, Virginia Tech, Blacksburg, VA, Spring 2025.
+  \item Western Regional Science Association (WRSA) Annual Meeting, Hawaii, 2023.
+  \item Western Agricultural Economics Association (WAEA) Annual Meeting, Santa Fe, NM, 2022.
+  \item Southern Agricultural Economics Association (SAEA) Annual Meeting, New Orleans, LA, 2022.
+\end{itemize}
+
+\section*{Teaching}
+
+\subsection*{Primary Instructor}
+\entry{ECON 351 -- Monetary Economics}{Spring 2025, 2026}
+\entry{ECON 322 -- The Global Economy: Trade and Development}{Summer 2025}
+
+\subsection*{Teaching Assistant}
+\entry{ECON 511 -- Microeconomic Theory}{Fall 2023--2025}
+\entry{ECON 581 -- Mathematical Methods in Economics}{Summer 2024}
+\entry{ECON 512 -- Advanced Microeconomics}{Spring 2024}
+\entry{AREC 525 -- Agribusiness Operations Research Methods}{Spring 2022--2023}
+
+\section*{Research Experience}
+
+\subsection*{Graduate Research Assistant, University of Tennessee}
+\hfill Jan 2020 -- Aug 2023
+\begin{itemize}
+  \item NIFA (USDA) and FAA Office of Environment and Energy (ASCENT) funded projects on forest-residue-based biofuel and sustainable aviation fuel supply chains in the Southeast U.S.
+  \item Designed cost-minimizing and profit-maximizing supply-chain networks using mixed-integer programming (GAMS).
+  \item Conducted facility-siting and investment analyses combining econometric models with the IMPLAN regional impact platform.
+  \item Performed sensitivity and scenario analysis of feedstock quality and market conditions using extended mathematical programming (EMP) and @RISK.
+  \item Managed high-resolution geospatial data in ArcGIS, R, and Python.
+\end{itemize}
+
+\section*{Honors and Awards}
+
+\begin{itemize}
+  \item J.\ Fred and Wilma Holly Award (best 2nd-year paper), University of Tennessee, 2024.
+\end{itemize}
+
+\section*{Technical Skills}
+
+STATA, R, Python, GAMS, MATLAB, SQL, ArcGIS; CFA Level II.
+
+\section*{References}
+
+\vspace{4pt}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{James Lake}\\
+  Associate Professor of Economics\\
+  Haslam College of Business\\
+  University of Tennessee, Knoxville\\
+  \href{mailto:jlake7@utk.edu}{jlake7@utk.edu}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{Georg Schaur}\\
+  Leigh Burch III Economics Professor\\
+  Haslam College of Business\\
+  University of Tennessee, Knoxville\\
+  \href{mailto:gschaur@utk.edu}{gschaur@utk.edu}
+\end{minipage}
+
+\vspace{16pt}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{Matthew Van Essen}\\
+  Lena M.\ and Clarence A.\ Garvin, Sr.\ Professor of Economics\\
+  Haslam College of Business\\
+  University of Tennessee, Knoxville\\
+  \href{mailto:mvanesse@utk.edu}{mvanesse@utk.edu}
+\end{minipage}
+
+\end{document}
