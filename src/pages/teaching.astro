@@ -12,7 +12,15 @@ import { primaryInstructor, teachingAssistant } from '../data/teaching';
       primaryInstructor.map((c) => (
         <li class="flex justify-between gap-4 border-b border-neutral-100 py-2">
           <span>
-            <span class="font-medium">{c.code}</span> — {c.title}
+            {c.syllabus ? (
+              <a href={c.syllabus}>
+                <span class="font-medium">{c.code}</span> — {c.title}
+              </a>
+            ) : (
+              <>
+                <span class="font-medium">{c.code}</span> — {c.title}
+              </>
+            )}
           </span>
           <span class="text-neutral-600 text-sm whitespace-nowrap">{c.term}</span>
         </li>
