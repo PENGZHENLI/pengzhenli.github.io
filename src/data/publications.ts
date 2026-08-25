@@ -7,6 +7,8 @@ export type Publication = {
   year: number;
   pages?: string;
   url?: string;
+  doi?: string;
+  code?: string;    // public replication repository
   metrics?: string; // shown only on variants with showMetrics
 };
 
@@ -49,6 +51,8 @@ export const publicationsById: Record<string, Publication> = {
     volume: "146",
     year: 2019,
     pages: "297–303",
+    doi: "https://doi.org/10.1016/j.techfore.2019.06.010",
+    code: "https://github.com/PENGZHENLI/tfsc2019-replication",
     metrics: "950+ citations (Google Scholar)",
   },
 };

@@ -28,6 +28,12 @@ const chrono = v.pubOrder[0] === "bb";
             {p.journal}{p.volume ? `, ${p.volume}` : ""} ({p.year}){p.pages ? `, ${p.pages}` : ""}.
           </div>
           {v.showMetrics && p.metrics && <div class="text-sm font-medium text-neutral-800">{p.metrics}</div>}
+          {(p.doi || p.code) && (
+            <div class="text-sm mt-1 space-x-3">
+              {p.doi && <a href={p.doi} target="_blank" rel="noopener">[doi]</a>}
+              {p.code && <a href={p.code} target="_blank" rel="noopener">[code &amp; data]</a>}
+            </div>
+          )}
         </div>
       </li>
     ))}
