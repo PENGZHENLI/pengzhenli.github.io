@@ -1,0 +1,9 @@
+---
+import CvPage from '../../components/pages/CvPage.astro';
+import { variants, subVariants } from '../../data/variants';
+export function getStaticPaths() {
+  return subVariants.map((variant) => ({ params: { variant } }));
+}
+const v = variants[Astro.params.variant as keyof typeof variants];
+---
+<CvPage variant={v} />

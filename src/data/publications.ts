@@ -1,4 +1,5 @@
 export type Publication = {
+  id: string;
   title: string;
   authors: string;
   journal: string;
@@ -6,10 +7,12 @@ export type Publication = {
   year: number;
   pages?: string;
   url?: string;
+  metrics?: string; // shown only on variants with showMetrics
 };
 
-export const publications: Publication[] = [
-  {
+export const publicationsById: Record<string, Publication> = {
+  bb: {
+    id: "bb",
     title:
       "Spatial optimization of the sustainable aviation fuel supply chains from forest residues via fast pyrolysis/hydrotreatment considering feedstock ash content variability",
     authors: "T. Yu, P. Li, et al.",
@@ -18,7 +21,8 @@ export const publications: Publication[] = [
     year: 2026,
     pages: "108793",
   },
-  {
+  trr: {
+    id: "trr",
     title:
       "Assessing the impact of preprocessing and conversion technologies on the sustainable aviation fuel supply from forest residues in the Southeast USA",
     authors: "T. Yu, P. Li, et al.",
@@ -27,16 +31,17 @@ export const publications: Publication[] = [
     year: 2024,
     pages: "639–654",
   },
-  {
-    title:
-      "Beef price spread relationship with processing capacity utilization",
+  jaaea: {
+    id: "jaaea",
+    title: "Beef price spread relationship with processing capacity utilization",
     authors: "C. Martinez, P. Li, et al.",
     journal: "Journal of the Agricultural and Applied Economics Association",
     volume: "2(1)",
     year: 2023,
     pages: "133–145",
   },
-  {
+  tfsc: {
+    id: "tfsc",
     title:
       "Do green technology innovations contribute to carbon dioxide emission reduction? Empirical evidence from patent data",
     authors: "K. Du, P. Li, Z. Yan",
@@ -44,5 +49,9 @@ export const publications: Publication[] = [
     volume: "146",
     year: 2019,
     pages: "297–303",
+    metrics: "950+ citations (Google Scholar)",
   },
-];
+};
+
+export const orderedPublications = (order: string[]) => order.map((id) => publicationsById[id]);
+export const publications = orderedPublications(["bb", "trr", "jaaea", "tfsc"]);

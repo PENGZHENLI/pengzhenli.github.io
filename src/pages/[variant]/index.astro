@@ -1,0 +1,9 @@
+---
+import HomePage from '../../components/pages/HomePage.astro';
+import { variants, subVariants } from '../../data/variants';
+export function getStaticPaths() {
+  return subVariants.map((variant) => ({ params: { variant } }));
+}
+const v = variants[Astro.params.variant as keyof typeof variants];
+---
+<HomePage variant={v} />

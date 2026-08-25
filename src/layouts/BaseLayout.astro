@@ -2,14 +2,18 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import type { Variant } from '../data/variants';
+import { variants } from '../data/variants';
 
 interface Props {
   title: string;
   description?: string;
+  variant?: Variant;
 }
 
 const {
   title,
+  variant = variants.trade,
   description = "Pengzhen Li — Ph.D. Candidate in Economics, University of Tennessee Knoxville.",
 } = Astro.props;
 ---
@@ -21,11 +25,12 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {variant.basePath !== "" && <meta name="robots" content="noindex" />}
     <title>{title}</title>
   </head>
   <body>
     <div class="mx-auto max-w-2xl px-6 py-10">
-      <Header />
+      <Header variant={variant} />
       <main class="mt-10">
         <slot />
       </main>

@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { presentationsFor } from '../../data/presentations';
+import { profile } from '../../data/profile';
+import type { Variant } from '../../data/variants';
+
+interface Props { variant: Variant }
+const { variant: v } = Astro.props;
+const heading = v.navLabels?.research ?? "Research";
+const pres = presentationsFor(v.presentationOrder);
+const industry = v.key === "industry";
+---
+
+<BaseLayout title={`${heading} — ${profile.name}`} variant={v}>
+  <h2 class="text-xl font-semibold">{heading}</h2>
+  <p class="mt-4 text-neutral-800">{v.researchIntro}</p>
+
+  {industry ? (
+    <>
+      <h3 class="text-lg font-semibold mt-10">Experience</h3>
+      <ul class="mt-3 list-disc pl-6 text-neutral-800 space-y-2">
+        <li><span class="font-medium">Doctoral researcher, University of Tennessee (2023–present).</span> Trade-restrictiveness indices for discriminatory tariffs (WITS/Comtrade pipeline, 2017–2024); cooperative-game model of multilateral tariff bargaining calibrated to WTO flows; mean-field-game model of endorsement timing tested on Brazilian and French data (2024 Holly Award).</li>
+        <li><span class="font-medium">Graduate research assistant, USDA NIFA and FAA ASCENT projects (2020–2023).</span> Mixed-integer optimization (GAMS) for forest-residue SAF supply chains across the Southeast US; IMPLAN regional impact and DEA efficiency analysis; scenario and sensitivity analysis (EMP, supervised ML, @RISK); reproducible ArcGIS/R/Python spatial pipelines. Published in <i>Biomass and Bioenergy</i> and <i>Transportation Research Record</i>.</li>
+        <li><span class="font-medium">Earlier applied projects (2016–2020).</span> Panel-threshold evidence on green innovation and CO₂ (950+ citations); synthetic-control estimate of the Wenchuan earthquake's long-run output effect; GMM analysis of MFP/CFAP payments and agricultural lending; TVAR/VECM/mGARCH commodity-price models; equity-premium prediction from NYT/WSJ text.</li>
+      </ul>
+      <h3 class="text-lg font-semibold mt-10">Tools I have built</h3>
+    </>
+  ) : (
+    <h3 class="text-lg font-semibold mt-10">Research agenda</h3>
+  )}
+  <ul class="mt-3 list-disc pl-6 text-neutral-800 space-y-2">
+    {v.futureAgenda.map((a) => <li>{a}</li>)}
+  </ul>
+
+  {!industry && (
+    <>
+      <h3 class="text-lg font-semibold mt-10">Methods</h3>
+      <p class="mt-3 text-neutral-800">
+        Theory: trade-theoretic index numbers, cooperative game theory (Shapley value), mean-field games.
+        Empirics: fixed effects, IV, difference-in-differences and event studies, synthetic control, GMM, panel-threshold models,
+        threshold VAR / VECM / multivariate GARCH; mixed-integer and stochastic programming (GAMS), IMPLAN, DEA; machine learning.
+        Stata, R, Python, SQL, ArcGIS.
+      </p>
+    </>
+  )}
+
+  <h3 class="text-lg font-semibold mt-12">Presentations</h3>
+  <ul class="mt-4 list-none pl-0 space-y-4">
+    {pres.map((t) => (
+      <li>
+        <div class="font-medium">{t.title}</div>
+        <div class="text-sm italic text-neutral-600">{t.venue}</div>
+        <div class="text-sm text-neutral-600">{t.location} · {t.year}</div>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

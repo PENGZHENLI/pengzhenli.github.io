@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { profile } from '../../data/profile';
+import type { Variant } from '../../data/variants';
+
+interface Props { variant: Variant }
+const { variant: v } = Astro.props;
+const heading = v.cvLabel === "Resume" ? "Resume" : "Curriculum Vitae";
+---
+
+<BaseLayout title={`${heading} — ${profile.name}`} variant={v}>
+  <h2 class="text-xl font-semibold">{heading}</h2>
+  <p class="mt-4">
+    <a href={v.cvFile} target="_blank" rel="noopener" class="inline-block border border-neutral-300 px-4 py-2 hover:bg-neutral-50">
+      Download PDF
+    </a>
+  </p>
+  <div class="mt-8 hidden md:block" style="height: 85vh;">
+    <iframe src={v.cvFile} class="h-full w-full border border-neutral-200" title={`${heading} PDF`}></iframe>
+  </div>
+</BaseLayout>

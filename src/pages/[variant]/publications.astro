@@ -1,0 +1,9 @@
+---
+import PublicationsPage from '../../components/pages/PublicationsPage.astro';
+import { variants, subVariants } from '../../data/variants';
+export function getStaticPaths() {
+  return subVariants.map((variant) => ({ params: { variant } }));
+}
+const v = variants[Astro.params.variant as keyof typeof variants];
+---
+<PublicationsPage variant={v} />
