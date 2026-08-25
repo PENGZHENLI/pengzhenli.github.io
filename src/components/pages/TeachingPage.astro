@@ -12,21 +12,35 @@ const { variant: v } = Astro.props;
   <h2 class="text-xl font-semibold">Teaching</h2>
   <p class="mt-3 text-sm text-neutral-600">
     Four sections as primary instructor and six as teaching assistant at the University of Tennessee, Knoxville.
-    Teaching statement and evaluation summary available on request.
+    Syllabi and my lecture slides for each course I have taught are linked below; teaching statement and evaluation summary available on request.
   </p>
 
   <h3 class="text-lg font-semibold mt-8">Primary Instructor</h3>
-  <ul class="mt-3 list-none pl-0">
+  <ul class="mt-3 list-none pl-0 space-y-2">
     {primaryInstructor.map((c) => (
-      <li class="flex justify-between gap-4 border-b border-neutral-100 py-2">
-        <span>
-          {c.syllabus ? (
-            <a href={c.syllabus}><span class="font-medium">{c.code}</span> — {c.title}</a>
-          ) : (
-            <><span class="font-medium">{c.code}</span> — {c.title}</>
-          )}
-        </span>
-        <span class="text-neutral-600 text-sm whitespace-nowrap">{c.term}</span>
+      <li class="border-b border-neutral-100 py-3">
+        <div class="flex justify-between gap-4">
+          <span><span class="font-medium">{c.code}</span> — {c.title}</span>
+          <span class="text-neutral-600 text-sm whitespace-nowrap">{c.term}</span>
+        </div>
+        {c.description && <p class="mt-1 text-sm text-neutral-700">{c.description}</p>}
+        <div class="mt-1 text-sm space-x-4">
+          {c.syllabus && <a href={c.syllabus}>[syllabus]</a>}
+          {c.textbook && <span class="text-neutral-600">Text: {c.textbook}</span>}
+        </div>
+        {c.slides && c.slides.length > 0 && (
+          <details class="mt-2 text-sm">
+            <summary class="cursor-pointer text-neutral-800">Lecture slides ({c.slides.length} chapters)</summary>
+            <ol class="mt-2 pl-0 list-none space-y-1">
+              {c.slides.map((s) => (
+                <li class="flex gap-3">
+                  <span class="text-neutral-400 w-8 shrink-0 tabular-nums">Ch. {s.chapter}</span>
+                  <a href={s.url}>{s.title}</a>
+                </li>
+              ))}
+            </ol>
+          </details>
+        )}
       </li>
     ))}
   </ul>
