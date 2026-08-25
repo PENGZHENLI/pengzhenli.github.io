@@ -27,7 +27,7 @@ const wip = all.filter((p) => p.wip);
           )}
           {(p.url || p.slidesUrl) && (
             <div class="text-sm mt-1 space-x-3">
-              {p.url && <a href={p.url}>[draft]</a>}
+              {p.url && <a href={p.url}>{p.url.startsWith("http") ? "[ssrn]" : "[draft]"}</a>}
               {p.slidesUrl && <a href={p.slidesUrl}>[slides]</a>}
             </div>
           )}

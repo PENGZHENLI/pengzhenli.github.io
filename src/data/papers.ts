@@ -46,6 +46,13 @@ export const papersById: Record<string, Paper> = {
       "Sustainable Aviation Fuel Production from Forest Residues with Ash Content: A Case Study of Nashville Airport",
     authors: "with T. Yu et al.",
   },
+  pork: {
+    id: "pork",
+    title: "Estimating Pork Primal Price Relationships Using a Threshold Vector Autoregressive Analysis",
+    authors: "with Charles Martinez, Christopher N. Boyer, Tun-Hsiang Yu, and David Anderson",
+    note: "SSRN working paper 4121953 (2022)",
+    url: "https://papers.ssrn.com/abstract=4121953",
+  },
   shapley: {
     id: "shapley",
     title:
