@@ -40,6 +40,11 @@ export const papersById: Record<string, Paper> = {
     title: "Price Risk, Irreversible Investment, and the Welfare Benchmark for the Section 45Z Clean Fuel Production Credit",
     authors: "with T. Edward Yu",
   },
+  safrisk: {
+    id: "safrisk",
+    title: "How Should 45Z Pay for Risk? A Welfare-CVaR and Project-Finance Decomposition of the IRA Clean Fuel Production Credit",
+    authors: "with T. Edward Yu",
+  },
   safstoch: {
     id: "safstoch",
     title: "Stochastic Optimisation of Logging Residue--based Biofuel Supply Chains Considering Feedstock Ash Content and Biofuel Price",
