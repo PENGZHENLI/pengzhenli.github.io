@@ -49,7 +49,7 @@ export const papersById: Record<string, Paper> = {
   pork: {
     id: "pork",
     title: "Estimating Pork Primal Price Relationships Using a Threshold Vector Autoregressive Analysis",
-    authors: "with Charles Martinez, Christopher N. Boyer, Tun-Hsiang Yu, and David Anderson",
+    authors: "Charles Martinez, Christopher N. Boyer, T. Edward Yu, Pengzhen Li, David Anderson",
     note: "SSRN working paper 4121953 (2022)",
     url: "https://papers.ssrn.com/abstract=4121953",
   },

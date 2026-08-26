@@ -23,7 +23,9 @@ const chrono = v.pubOrder[0] === "bb";
         <span class="text-neutral-400 w-6 shrink-0 tabular-nums">[{i + 1}]</span>
         <div>
           <div class="font-medium">{p.url ? <a href={p.url}>{p.title}</a> : p.title}</div>
-          <div class="text-sm text-neutral-600">{p.authors}</div>
+          <div class="text-sm text-neutral-600">
+            {p.authors.split("Pengzhen Li").flatMap((part, k) => (k === 0 ? [part] : [<span class="font-medium text-neutral-900">Pengzhen Li</span>, part]))}
+          </div>
           <div class="text-sm italic text-neutral-600">
             {p.journal}{p.volume ? `, ${p.volume}` : ""} ({p.year}){p.pages ? `, ${p.pages}` : ""}.
           </div>
