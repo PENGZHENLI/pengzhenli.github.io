@@ -46,7 +46,7 @@ export const papersById: Record<string, Paper> = {
     authors: "with T. Edward Yu",
     url: "/files/papers/safwelfare.pdf",
     slidesUrl: "/files/papers/safwelfare-slides.pdf",
-    updated: "2026-08-26",
+    updated: "2026-08-25",
   },
   safrisk: {
     id: "safrisk",
@@ -54,7 +54,7 @@ export const papersById: Record<string, Paper> = {
     authors: "with T. Edward Yu",
     url: "/files/papers/safrisk.pdf",
     slidesUrl: "/files/papers/safrisk-slides.pdf",
-    updated: "2026-08-26",
+    updated: "2026-08-25",
   },
   pork: {
     id: "pork",
