@@ -104,6 +104,6 @@ export const primaryInstructor: Course[] = [
 export const teachingAssistant: Course[] = [
   { code: "ECON 511", title: "Microeconomic Theory (Ph.D.)", term: "Fall 2023, 2024, 2025" },
   { code: "ECON 512", title: "Advanced Microeconomics (Ph.D.)", term: "Spring 2024" },
-  { code: "ECON 581", title: "Mathematical Methods in Economics", term: "Summer 2024" },
+  { code: "ECON 581", title: "Mathematical Methods in Economics (Ph.D.)", term: "Summer 2024" },
   { code: "AREC 525", title: "Agribusiness Operations Research Methods", term: "Spring 2022, 2023" },
 ];
