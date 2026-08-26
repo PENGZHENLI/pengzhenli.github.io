@@ -121,7 +121,7 @@ const industry: Variant = {
     "My work pairs identification with tools that scale: difference-in-differences, event studies, IV, synthetic control, and GMM on large panels; mixed-integer and stochastic programming for supply-chain design; regional impact analysis (IMPLAN) and efficiency analysis (DEA); supervised and unsupervised machine learning, including text-as-data. Every project below ended in a deliverable — a published paper, a calibrated model, or a decision tool for a federal sponsor.",
   futureAgenda: [
     "Trade-policy measurement: a WITS/Comtrade pipeline that computes welfare-based restrictiveness indices and a level/discrimination decomposition for any tariff regime.",
-    "Scenario analysis: cooperative-game (Shapley) allocation of gains from coordinated policy, calibrated to WTO bilateral flows.",
+    "Scenario analysis: cooperative-game (Shapley) allocation of gains from coordinated policy, extending Bagwell-Staiger-Yurukoglu (2021) to the multilateral case.",
     "Supply-chain optimization under uncertainty: GAMS/EMP models with feedstock-quality and price risk, delivered to USDA and FAA sponsors.",
   ],
   navLabels: { cv: "Resume", research: "Experience" },
