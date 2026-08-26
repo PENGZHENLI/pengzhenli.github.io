@@ -45,16 +45,6 @@ export const papersById: Record<string, Paper> = {
     title: "How Should 45Z Pay for Risk? A Welfare-CVaR and Project-Finance Decomposition of the IRA Clean Fuel Production Credit",
     authors: "with T. Edward Yu",
   },
-  safstoch: {
-    id: "safstoch",
-    title: "Stochastic Optimisation of Logging Residue--based Biofuel Supply Chains Considering Feedstock Ash Content and Biofuel Price",
-    authors: "with T. Yu et al.",
-  },
-  safnash: {
-    id: "safnash",
-    title: "Sustainable Aviation Fuel Production from Forest Residues with Ash Content: A Case Study of Nashville Airport",
-    authors: "with T. Yu et al.",
-  },
   pork: {
     id: "pork",
     title: "Estimating Pork Primal Price Relationships Using a Threshold Vector Autoregressive Analysis",
