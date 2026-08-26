@@ -9,6 +9,7 @@ export type Paper = {
   url?: string;
   slidesUrl?: string;
   abstract?: string;
+  updated?: string;
   wip?: boolean;
 };
 
@@ -25,6 +26,7 @@ export const papersById: Record<string, Paper> = {
     title: "Cooperative Multilateral Tariff Negotiations: A Quantitative Analysis Using Shapley Value",
     authors: "with Georg Schaur",
     note: "Draft v2, August 2026.",
+    updated: "2026-08-21",
     wip: true,
   },
   endorse: {
@@ -34,16 +36,19 @@ export const papersById: Record<string, Paper> = {
     note: "2024 J. Fred and Wilma Holly Award (best second-year paper).",
     url: "/files/papers/endorse.pdf",
     abstract: "We develop and estimate a structural model of mayoral endorsements in presidential elections as an anonymous Bayesian game with mean-field equilibrium. The mean-field formulation reduces equilibrium computation to a fixed point on the candidate simplex, independent of the number of mayors, making structural estimation tractable at the scale of an entire country. Identification follows a BLP-style logit inversion of observed log-odds onto type covariates and aggregate shares. We apply the framework to Brazil's coalition-mediated endorsement system (2014, 5,623 mayors) and France's individual parrainage system (2017 and 2022).",
+    updated: "2026-04-26",
   },
   safwelfare: {
     id: "safwelfare",
     title: "Price Risk, Irreversible Investment, and the Welfare Benchmark for the Section 45Z Clean Fuel Production Credit",
     authors: "with T. Edward Yu",
+    updated: "2026-08-26",
   },
   safrisk: {
     id: "safrisk",
     title: "How Should 45Z Pay for Risk? A Welfare-CVaR and Project-Finance Decomposition of the IRA Clean Fuel Production Credit",
     authors: "with T. Edward Yu",
+    updated: "2026-08-26",
   },
   pork: {
     id: "pork",

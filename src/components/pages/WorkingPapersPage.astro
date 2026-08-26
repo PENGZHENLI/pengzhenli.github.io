@@ -6,9 +6,12 @@ import type { Variant } from '../../data/variants';
 
 interface Props { variant: Variant }
 const { variant: v } = Astro.props;
-const all = orderedPapers(v.paperOrder);
+const all = orderedPapers(v.paperOrder).filter(Boolean);
 const working = all.filter((p) => !p.wip);
 const wip = all.filter((p) => p.wip);
+
+const shown = (d?: string) =>
+  d ? new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" }) : null;
 ---
 
 <BaseLayout title={`Working Papers — ${profile.name}`} variant={v}>
@@ -25,12 +28,11 @@ const wip = all.filter((p) => p.wip);
           {v.showJmpAbstract && p.id === "jmp" && p.abstract && (
             <p class="mt-2 text-sm text-neutral-700"><span class="underline">Abstract</span>: {p.abstract}</p>
           )}
-          {(p.url || p.slidesUrl) && (
-            <div class="text-sm mt-1 space-x-3">
-              {p.url && <a href={p.url}>{p.url.startsWith("http") ? "[ssrn]" : "[draft]"}</a>}
-              {p.slidesUrl && <a href={p.slidesUrl}>[slides]</a>}
-            </div>
-          )}
+          <div class="text-sm mt-1 space-x-3">
+            {p.url && <a href={p.url}>{p.url.startsWith("http") ? "[ssrn]" : "[draft]"}</a>}
+            {p.slidesUrl && <a href={p.slidesUrl}>[slides]</a>}
+            {shown(p.updated) && <span class="text-neutral-500">Current draft: {shown(p.updated)}</span>}
+          </div>
         </div>
       </li>
     ))}
@@ -39,11 +41,17 @@ const wip = all.filter((p) => p.wip);
   {wip.length > 0 && (
     <>
       <h2 class="text-xl font-semibold mt-12">Work in Progress</h2>
-      <ul class="mt-6 space-y-3 list-none pl-0">
+      <ul class="mt-6 space-y-4 list-none pl-0">
         {wip.map((p) => (
           <li>
-            <div class="font-medium">{p.title}</div>
+            <div class="font-medium">{p.url ? <a href={p.url}>{p.title}</a> : p.title}</div>
             <div class="text-sm text-neutral-600">{p.authors}</div>
+            {p.note && <div class="text-sm italic text-neutral-600">{p.note}</div>}
+            <div class="text-sm mt-1 space-x-3">
+              {p.url && <a href={p.url}>{p.url.startsWith("http") ? "[ssrn]" : "[draft]"}</a>}
+              {p.slidesUrl && <a href={p.slidesUrl}>[slides]</a>}
+              {shown(p.updated) && <span class="text-neutral-500">Current draft: {shown(p.updated)}</span>}
+            </div>
           </li>
         ))}
       </ul>
