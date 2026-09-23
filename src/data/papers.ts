@@ -16,10 +16,17 @@ export type Paper = {
 export const papersById: Record<string, Paper> = {
   jmp: {
     id: "jmp",
+    title: "Measured Quality Falls Within the Firm: Market Access and Chinese Exports",
+    authors: "with James Lake",
+    url: "/files/papers/jmp.pdf",
+    abstract: "Better access to a market is expected to make exporters upgrade. We show it does the opposite, and we locate where. Using the removal of tariff uncertainty for Chinese exporters to the United States in 2002, and comparing a firm's shipments of a product to the United States against its shipments of the same product elsewhere, we find that measured export quality falls by about 14 percent for heavily exposed products against barely exposed ones, and that 78% of that decline survives inside firm-product-arm cells that ship in both periods. The fall is not markup compression: the quantity response falls short of what the price cut implies by exactly the amount the measurement identity requires. We then show that this class of evidence cannot go further. Measured quality is a linear combination of the price and quantity it is inferred from, so a degraded product and a widened clientele imply the same three coefficients. We set out what would separate them.",
+    updated: "2026-09-23",
+  },
+  tri: {
+    id: "tri",
     title: "Trade Restrictiveness Indices with Discriminatory Tariffs",
     authors: "with James Lake",
     note: "Presented at the Midwest Economic Theory and International Trade Meetings, Virginia Tech, 2025.",
-    abstract: "Trade-restrictiveness indices summarize a country's tariff schedule as a single welfare-equivalent uniform tariff, but the existing indices assume most-favored-nation tariffs. Since 2018 the largest tariff changes—the US–China tariff war, retaliatory tariffs, and proliferating preferential agreements—have been discriminatory by design. We extend the trade-restrictiveness index to partner-specific tariffs while preserving its welfare interpretation and derive a closed-form decomposition into a \"level\" component (how much a country restricts trade) and a \"discrimination\" component (how unevenly it does so). Computing the indices from WITS/Comtrade data for 2017–2024, we find that the MFN-only index systematically understates trade distortions when discrimination is high, and the decomposition separates, for the first time in this framework, the welfare cost of discrimination from the cost of protection.",
   },
   shapley: {
     id: "shapley",
