@@ -31,21 +31,20 @@ const trade: Variant = {
   title: "Ph.D. Candidate in Economics",
   fields: "International Trade · Trade Policy · Applied Econometrics · Political Economy",
   bio:
-    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville, on the 2026–27 job market. I study international trade policy in a world where tariffs are no longer applied on a most-favored-nation basis. My job market paper, with James Lake, shows that when the United States removed tariff uncertainty for Chinese exporters in 2002, the measured quality of what incumbent firms shipped there fell, and fell inside continuing firm-product cells rather than through entry and exit; it also shows why price, quantity and quality estimates of this kind cannot by themselves say whether the good got worse or the clientele got wider. A second dissertation chapter, also with James Lake, extends trade-restrictiveness indices to preferential (non-MFN) tariffs, and a third paper, with Georg Schaur, models multilateral tariff negotiations as a cooperative game. The third dissertation chapter applies mean-field-game tools to mayoral endorsements in Brazil, and I have four peer-reviewed publications in applied energy, agricultural, and environmental economics. I received the 2026 Charles B. Garrison Award for Excellence in Teaching at the University of Tennessee.",
+    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville, on the 2026–27 job market. I study international trade policy in a world where tariffs are no longer applied on a most-favored-nation basis. My job market paper, with James Lake, shows that when the United States removed tariff uncertainty for Chinese exporters in 2002, the measured quality of what incumbent firms shipped there fell, and fell inside continuing firm-product cells rather than through entry and exit; it also shows why price, quantity and quality estimates of this kind cannot by themselves say whether the good got worse or the clientele got wider. A second dissertation chapter, also with James Lake, extends trade-restrictiveness indices to preferential (non-MFN) tariffs. The third dissertation chapter applies mean-field-game tools to mayoral endorsements in Brazil, and I have four peer-reviewed publications in applied energy, agricultural, and environmental economics. I received the 2026 Charles B. Garrison Award for Excellence in Teaching at the University of Tennessee.",
   cvFile: "/files/Pengzhen_Li_CV.pdf",
   cvLabel: "CV",
-  paperOrder: ["jmp", "tri", "endorse", "shapley", "safwelfare", "safrisk", "pork"],
+  paperOrder: ["jmp", "tri", "endorse"],  // trade site: dissertation chapters only (2026-10-01)
   pubOrder: ["bb", "trr", "jaaea", "tfsc"],
   presentationOrder: "tradeFirst",
   showJmpAbstract: true,
   showMetrics: false,
   showChineseName: false,
   researchIntro:
-    "My research asks how trade policy works when the multilateral, most-favored-nation world that most of our tools were built for no longer describes the trading system. My dissertation has three chapters. The job market paper asks what better market access does to the quality of what exporters ship, using the 2002 removal of US tariff uncertainty for Chinese exporters and the universe of Chinese customs records. The second builds trade-restrictiveness indices that remain welfare-interpretable under discriminatory tariffs. The third applies mean-field-game tools to political economy, estimating endorsement behavior among Brazil's 5,570 mayors. Separately, I work on cooperative-game models of multilateral tariff bargaining.",
+    "My research asks how trade policy works when the multilateral, most-favored-nation world that most of our tools were built for no longer describes the trading system. My dissertation has three chapters. The job market paper asks what better market access does to the quality of what exporters ship, using the 2002 removal of US tariff uncertainty for Chinese exporters and the universe of Chinese customs records. The second builds trade-restrictiveness indices that remain welfare-interpretable under discriminatory tariffs. The third applies mean-field-game tools to political economy, estimating endorsement behavior among Brazil's 5,570 mayors.",
   futureAgenda: [
     "Quality or clientele: product-line and buyer-level evidence to separate a degraded good from a widened clientele after market-access shocks.",
     "A quantitative theory of discriminatory trade policy: firm-level and GVC extensions of the indices; equilibrium formation of preferential agreements; carbon border adjustments as discriminatory tariffs.",
-    "Cooperative bargaining over trade and related policy: the Shapley framework as a scenario tool for RCEP/CPTPP-type agreements, extended to climate agreements and regional blocs.",
     "Mean-field-game political economy: campaign contributions, lobbying, and primary-election timing.",
   ],
 };
