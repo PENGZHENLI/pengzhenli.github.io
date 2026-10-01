@@ -28,6 +28,7 @@ export const papersById: Record<string, Paper> = {
     authors: "with James Lake",
     note: "Presented at the Midwest Economic Theory and International Trade Meetings, Virginia Tech, 2025.",
     url: "/files/papers/tri.pdf",
+    abstract: "This paper extends the Trade Restrictiveness Index (TRI) to preferential tariffs. Using data for 2000–2020, a period of rapid expansion of Preferential Trade Agreements (PTAs), we compute 2,406 annual TRIs for 136 countries in an Armington model with large countries. Once terms-of-trade effects are taken into account, the global import-weighted TRI lies well below the average tariff, and the TRI for preferential tariffs declines faster than the TRI for MFN tariffs as the share of trade under PTAs grows. Across countries, average tariffs track the TRI poorly: the largest importers have TRIs far below their average tariffs, while many small economies have TRIs above them. Assuming that countries are small overstates the TRI, most of all for large importers.",
     updated: "2026-10-01",
   },
   shapley: {
