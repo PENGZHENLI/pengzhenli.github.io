@@ -27,6 +27,8 @@ export const papersById: Record<string, Paper> = {
     title: "Trade Restrictiveness Indices with Discriminatory Tariffs",
     authors: "with James Lake",
     note: "Presented at the Midwest Economic Theory and International Trade Meetings, Virginia Tech, 2025.",
+    url: "/files/papers/tri.pdf",
+    updated: "2026-10-01",
   },
   shapley: {
     id: "shapley",
@@ -54,7 +56,7 @@ export const papersById: Record<string, Paper> = {
     authors: "with T. Edward Yu",
     url: "/files/papers/safwelfare.pdf",
     slidesUrl: "/files/papers/safwelfare-slides.pdf",
-    updated: "2026-09-04",
+    updated: "2026-09-26",
   },
   safrisk: {
     id: "safrisk",
@@ -62,7 +64,7 @@ export const papersById: Record<string, Paper> = {
     authors: "with T. Edward Yu",
     url: "/files/papers/safrisk.pdf",
     slidesUrl: "/files/papers/safrisk-slides.pdf",
-    updated: "2026-08-25",
+    updated: "2026-09-26",
   },
   pork: {
     id: "pork",

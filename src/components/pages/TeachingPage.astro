@@ -19,7 +19,7 @@ const { variant: v } = Astro.props;
   <h3 class="text-lg font-semibold mt-8">Primary Instructor</h3>
   <ul class="mt-3 list-none pl-0 space-y-2">
     {primaryInstructor.map((c) => (
-      <li class="border-b border-neutral-100 py-3">
+      <li id={c.code.toLowerCase().replace(/\s+/g, '')} class="border-b border-neutral-100 py-3 scroll-mt-20">
         <div class="flex justify-between gap-4">
           <span><span class="font-medium">{c.code}</span> — {c.title}</span>
           <span class="text-neutral-600 text-sm whitespace-nowrap">{c.term}</span>
