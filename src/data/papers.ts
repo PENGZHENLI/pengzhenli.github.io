@@ -41,7 +41,7 @@ export const papersById: Record<string, Paper> = {
   },
   endorse: {
     id: "endorse",
-    title: "Estimating Mean-Field Games with a Payoff Threshold: Candidates and Party Lists in Brazil",
+    title: "Estimating Large Games with a Payoff Threshold: Candidates and Party Lists in Brazil",
     authors: "with Matt Van Essen and Luiz Lima",
     note: "2024 J. Fred and Wilma Holly Award (best second-year paper).",
     abstract: "Estimating a discrete-choice game of incomplete information requires evaluating every joint action profile, which is infeasible when dozens of candidates interact, as in Brazilian council elections. We instead adopt a mean-field equilibrium, in which candidates affect one another only through list shares, reducing the fixed point to one dimension per list. Because seats go only to lists that clear a threshold, an equilibrium exists if and only if some proposed set of clearing lists is self-fulfilling, and we show that such a set need not exist. Since several lists can clear the threshold in the same market, within-market log-odds contrasts difference out unobserved list appeal and identify how responsiveness differs across candidate types. In markets of a few dozen candidates, sampling noise in list shares attenuates the maximum-likelihood estimate of the weight on the chance of a seat; a split-sample instrument removes most of this bias in simulations. Across 926,900 council candidacies, candidates favor lists with a better chance of a seat, and among non-incumbents the response is stronger for those with a university degree.",
