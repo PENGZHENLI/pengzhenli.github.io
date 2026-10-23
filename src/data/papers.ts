@@ -26,8 +26,8 @@ export const papersById: Record<string, Paper> = {
     id: "tri",
     title: "Trade Restrictiveness Indices with Discriminatory Tariffs",
     authors: "with James Lake",
-    abstract: "This paper extends the Trade Restrictiveness Index (TRI) to preferential tariffs. Using data for 2000–2020, a period of rapid expansion of Preferential Trade Agreements (PTAs), we compute 2,406 annual TRIs for 136 countries in an Armington model with large countries. Once terms-of-trade effects are taken into account, the global import-weighted TRI lies well below the average tariff, and the TRI for preferential tariffs declines faster than the TRI for MFN tariffs as the share of trade under PTAs grows. Across countries, average tariffs track the TRI poorly: the largest importers have TRIs far below their average tariffs, while many small economies have TRIs above them. Assuming that countries are small overstates the TRI, most of all for large importers.",
-    updated: "2026-10-01",
+    abstract: "A Trade Restrictiveness Index (TRI) is the uniform tariff that is welfare-equivalent to a country's actual tariff structure. Its standard implementation assigns a single tariff to each product, yet preferential trade agreements make tariffs on the same product differ across exporters, distorting where a country buys as well as what it buys. In an Armington model, we derive a TRI that separates these two distortions: for a small country, the squared index is, to second order, the square of the conventional index evaluated at mean product tariffs plus a term in the variance of tariffs across each product's exporters. We also derive the index for large importers, whose tariffs affect world prices. Across 123 importers over 2000–2020, the dispersion term accounts for 24 percent of the median importer's squared TRI in 2018, up from zero in the early 2000s. Preferences therefore reduce the TRI far less than they reduce average tariffs: in 2018 they cut the median importer's simple average tariff by 16 percent but its TRI by only 5 percent.",
+    updated: "2026-10-22",
   },
   shapley: {
     id: "shapley",
