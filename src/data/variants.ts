@@ -19,9 +19,7 @@ export type Variant = {
   showJmpAbstract: boolean;
   showMetrics: boolean;        // citation counts / journal tiers
   showChineseName: boolean;
-  researchIntro: string;       // paragraph at top of Research page
-  futureAgenda: string[];      // bullets on Research page
-  navLabels?: Partial<Record<"cv" | "research", string>>;
+  navLabels?: Partial<Record<"cv", string>>;
 };
 
 const trade: Variant = {
@@ -29,9 +27,9 @@ const trade: Variant = {
   basePath: "",
   displayName: "Pengzhen Li",
   title: "Ph.D. Candidate in Economics",
-  fields: "International Trade · Trade Policy · Applied Econometrics · Political Economy",
+  fields: "International Trade · Trade Policy · Environmental & Energy Economics · Applied Econometrics",
   bio:
-    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville, on the 2026–27 job market. I study international trade policy in a world where tariffs are no longer applied on a most-favored-nation basis. My job market paper shows that when the United States removed tariff uncertainty for Chinese exporters in 2002, the quality of what incumbent firms shipped there fell, and fell inside continuing firm-product cells rather than through entry and exit; it also shows why price, quantity and quality estimates of this kind cannot by themselves say whether the good got worse or the clientele got wider. A second dissertation chapter, with James Lake, extends trade-restrictiveness indices to preferential (non-MFN) tariffs. The third dissertation chapter develops mean-field-game methods for elections with many candidates and estimates them on Brazilian council elections, and I have four peer-reviewed publications in applied energy, agricultural, and environmental economics. I received the 2026 Charles B. Garrison Award for Excellence in Teaching at the University of Tennessee.",
+    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville, on the 2026–27 job market. I am an international trade economist studying how trade policy shapes what firms sell and how to measure the restrictiveness of trade policy. My job market paper, “Market Access and the Quality of Chinese Exports,” finds that after the United States granted China permanent normal trade relations in 2002, the quality of products that Chinese firms kept selling in the US fell, contrary to the expected upgrading; a model in which better access lets sellers reach buyers who value quality less explains the decline. My second dissertation chapter, with James Lake, builds a trade-restrictiveness index for tariffs that discriminate across exporters, and my third, with Matt Van Essen and Luiz Lima, estimates a large game of how candidates choose party lists in Brazilian elections. I have four peer-reviewed publications in energy, agricultural, and environmental economics. In 2026 I received the Department of Economics’ Charles B. Garrison Award for Excellence in Teaching, given for the best teaching by a Ph.D. student.",
   cvFile: "/files/Pengzhen_Li_CV.pdf",
   cvLabel: "CV",
   paperOrder: ["jmp", "tri", "endorse"],  // trade site: dissertation chapters only (2026-10-01)
@@ -40,13 +38,6 @@ const trade: Variant = {
   showJmpAbstract: true,
   showMetrics: false,
   showChineseName: false,
-  researchIntro:
-    "My research asks how trade policy works when the multilateral, most-favored-nation world that most of our tools were built for no longer describes the trading system. My dissertation has three chapters. The job market paper asks what better market access does to the quality of what exporters ship, using the 2002 removal of US tariff uncertainty for Chinese exporters and the universe of Chinese customs records. The second builds trade-restrictiveness indices that remain welfare-interpretable under discriminatory tariffs. The third applies mean-field-game tools to political economy, estimating how 926,900 Brazilian council candidates respond to the chance of winning a seat.",
-  futureAgenda: [
-    "Quality or clientele: product-line and buyer-level evidence to separate a degraded good from a widened clientele after market-access shocks.",
-    "A quantitative theory of discriminatory trade policy: firm-level and GVC extensions of the indices; equilibrium formation of preferential agreements; carbon border adjustments as discriminatory tariffs.",
-    "Mean-field-game political economy: campaign contributions, lobbying, and primary-election timing.",
-  ],
 };
 
 const environment: Variant = {
@@ -56,7 +47,7 @@ const environment: Variant = {
   title: "Ph.D. Candidate in Economics",
   fields: "Environmental & Energy Economics · Agricultural & Resource Economics · Applied Econometrics · International Trade",
   bio:
-    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville, on the 2026–27 job market. I am an applied economist working on environmental, energy, and resource questions. My published work asks whether green-technology innovation actually lowers CO₂ emissions (Technological Forecasting and Social Change, 2019; 1,000+ citations), how sustainable-aviation-fuel supply chains should be sited and financed (Biomass and Bioenergy, 2026; Transportation Research Record, 2024), and how market power shapes agricultural prices (JAAEA, 2023). My job market paper studies how better market access changed the quality of Chinese exports, and a second dissertation chapter builds trade-restrictiveness indices for discriminatory tariffs — a tool I am now applying to carbon border adjustments and green-goods tariffs.",
+    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville, on the 2026–27 job market. I am an applied economist working on environmental, energy, and resource questions. My published work examines the relationship between green-technology innovation and CO₂ emissions (Technological Forecasting and Social Change, 2019; 1,000+ citations), how sustainable-aviation-fuel supply chains should be designed (Biomass and Bioenergy, 2026; Transportation Research Record, 2024), and how processing capacity affects beef price spreads (JAAEA, 2023). My job market paper, “Market Access and the Quality of Chinese Exports,” finds that the quality of products Chinese firms kept selling in the US fell after the United States removed tariff uncertainty in 2002, and a second dissertation chapter builds a trade-restrictiveness index for tariffs that discriminate across exporters. In 2026 I received the Department of Economics’ Charles B. Garrison Award for Excellence in Teaching, given for the best teaching by a Ph.D. student.",
   cvFile: "/files/Pengzhen_Li_CV_Environment.pdf",
   cvLabel: "CV",
   paperOrder: ["jmp", "tri", "safwelfare", "safrisk", "pork", "endorse", "shapley"],
@@ -65,14 +56,6 @@ const environment: Variant = {
   showJmpAbstract: true,
   showMetrics: true,
   showChineseName: false,
-  researchIntro:
-    "I work on environmental, energy, and resource questions with applied econometric and optimization methods. Three years as a research assistant on USDA NIFA and FAA ASCENT projects produced the economic models for a forest-residue-to-SAF supply chain in the Southeast US; my most cited paper studies green innovation and CO₂ emissions with panel-threshold models. My dissertation studies trade policy and export quality using Chinese customs records, and one of its chapters builds trade-restrictiveness indices for a world of discriminatory tariffs — a measurement problem that has become an environmental one now that carbon border adjustments and tariffs on solar panels, EVs, and batteries are among the largest discriminatory trade policies in force.",
-  futureAgenda: [
-    "Trade policy as environmental policy: apply the discriminatory-tariff indices to carbon border adjustments and green-goods tariffs; quantify restrictiveness, incidence, and effects on decarbonization.",
-    "Decarbonizing hard-to-abate transport: SAF policy design — blending mandates, tax credits, feedstock competition — with the Yu group and FAA ASCENT.",
-    "Innovation and emissions: firm-level patent and emissions data with credible identification; diffusion of green technology through trade.",
-    "Coalitions in climate and trade agreements via the cooperative-game framework.",
-  ],
 };
 
 const china: Variant = {
@@ -80,9 +63,9 @@ const china: Variant = {
   basePath: "/china",
   displayName: "Pengzhen Li 李鹏振",
   title: "Ph.D. Candidate in Economics",
-  fields: "International Trade · Environmental & Energy Economics · Applied Econometrics · Political Economy",
+  fields: "International Trade · Environmental & Energy Economics · Applied Econometrics",
   bio:
-    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville (B.A. Tongji University; M.A. Shandong University), on the 2026–27 job market. My research lies at the intersection of international trade and environmental economics, with a focus on China. My job market paper uses the universe of Chinese customs records (2000–2014) to show that when the United States removed tariff uncertainty for Chinese exporters in 2002, the quality of incumbent firms' US shipments fell, within the same firm and product. A second dissertation chapter extends trade-restrictiveness indices to preferential tariffs and computes them for 123 importers, China among them, over 2000–2020. My paper on green-technology innovation and CO₂ emissions (Technological Forecasting and Social Change, 2019) has been cited more than 1,000 times. I have four SSCI/SCI publications and a research agenda on the trade–environment nexus: carbon border adjustments, green-goods tariffs, and how tariff shocks affect green innovation at the firm level.",
+    "I am a Ph.D. candidate in Economics at the University of Tennessee, Knoxville (B.A. Tongji University; M.A. Shandong University), on the 2026–27 job market. My research lies at the intersection of international trade and environmental economics, with a focus on China. My job market paper, “Market Access and the Quality of Chinese Exports,” uses the universe of Chinese customs records (2000–2014) to show that after the United States removed tariff uncertainty for Chinese exporters in 2002, the quality of products that Chinese firms kept selling in the US fell. A second dissertation chapter builds a trade-restrictiveness index for tariffs that discriminate across exporters and computes it for 123 importers, China among them, over 2000–2020. My master’s thesis on green-technology innovation and CO₂ emissions (Technological Forecasting and Social Change, 2019) has been cited more than 1,000 times, and I have four SSCI/SCI publications. In 2026 I received the Department of Economics’ Charles B. Garrison Award for Excellence in Teaching, given for the best teaching by a Ph.D. student.",
   cvFile: "/files/Pengzhen_Li_CV_China.pdf",
   cvLabel: "CV",
   paperOrder: ["jmp", "tri", "endorse", "shapley", "safwelfare", "safrisk", "pork"],
@@ -91,14 +74,6 @@ const china: Variant = {
   showJmpAbstract: true,
   showMetrics: true,
   showChineseName: true,
-  researchIntro:
-    "On the trade side, my job market paper studies how Chinese exporters changed what they shipped to the United States once tariff uncertainty was removed in 2002, and a second dissertation chapter extends trade-restrictiveness indices to preferential tariffs and computes them for 123 importers over 2000–2020, a tool that can be applied to the US–China tariff war. On the environmental side, my most cited work asks whether green-technology innovation actually reduces CO₂ emissions. The two sides meet in my research agenda: carbon border adjustments and tariffs on solar panels, batteries, and EVs are discriminatory trade policies aimed squarely at Chinese exports, and the tools I have built can be applied to measure how restrictive they are and who bears their cost.",
-  futureAgenda: [
-    "Measuring environmental trade policy: the EU CBAM and US/EU tariffs on Chinese solar, battery, and EV exports — restrictiveness, discrimination, incidence on Chinese exporters.",
-    "Trade, green innovation, and emissions: Chinese firm-level customs, patent, and emissions data.",
-    "Coalitions in trade and climate agreements: RCEP/CPTPP configurations and climate clubs via the Shapley framework.",
-    "Decarbonizing transport: extending the SAF work to aviation-fuel policy in Asia.",
-  ],
 };
 
 const industry: Variant = {
@@ -117,14 +92,7 @@ const industry: Variant = {
   showJmpAbstract: false,
   showMetrics: true,
   showChineseName: false,
-  researchIntro:
-    "My work pairs identification with tools that scale: difference-in-differences, event studies, IV, synthetic control, and GMM on large panels; mixed-integer and stochastic programming for supply-chain design; regional impact analysis (IMPLAN) and efficiency analysis (DEA); supervised and unsupervised machine learning, including text-as-data. Every project below ended in a deliverable — a published paper, a calibrated model, or a decision tool for a federal sponsor.",
-  futureAgenda: [
-    "Trade-policy measurement: a BACI/WITS pipeline that computes welfare-based restrictiveness indices with MFN and preferential tariffs for 123 importers, 2000–2020.",
-    "Scenario analysis: cooperative-game (Shapley) allocation of gains from coordinated policy, extending Bagwell-Staiger-Yurukoglu (2021) to the multilateral case.",
-    "Supply-chain optimization under uncertainty: GAMS/EMP models with feedstock-quality and price risk, delivered to USDA and FAA sponsors.",
-  ],
-  navLabels: { cv: "Resume", research: "Experience" },
+  navLabels: { cv: "Resume" },
 };
 
 export const variants: Record<VariantKey, Variant> = { trade, environment, china, industry };
