@@ -16,7 +16,7 @@ export type Paper = {
 export const papersById: Record<string, Paper> = {
   jmp: {
     id: "jmp",
-    title: "Measured Quality Falls Within the Firm: Market Access and Chinese Exports",
+    title: "Market Access and the Quality of Chinese Exports",
     authors: "",
     url: "/files/papers/jmp.pdf",
     abstract: "This paper links the 2002 removal of tariff uncertainty on Chinese exports to the United States to a decline in measured quality within continuing export relationships. Comparing a firm's US and non-US shipments of the same product, measured quality falls by about 6 percent among cells that ship in both periods in the three years before an overlapping quota removal, and by about 11 percent in the full sample over the whole window, which contains that removal. Restricting the sample to cells that ship in both periods retains 83 percent of the full-window estimate and yields a decline twice as large as the full-sample estimate in the three clean years. The price and quantity responses are not those of a markup cut on an unchanged good, and the decline is not the input-tariff upgrading of the same years, which varies only within firm and year and is absorbed by the design. We develop a model in which improved access can extend a seller's reach to buyers below a sorting boundary, who lower the return to appeal. Under stated conditions, appeal is capped and can fall. The continuing-cell price and quantity pattern is consistent with this mechanism but does not identify it against other sources of a demand-residual shift.",
