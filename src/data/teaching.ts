@@ -11,7 +11,7 @@ export type Course = {
 
 // Slide decks are my own Beamer lectures (built from the course beamer/ sources); publisher slides are not posted.
 export const teachingAward =
-  "Charles B. Garrison Award for Excellence in Teaching, University of Tennessee (2026)";
+  "Charles B. Garrison Award for Excellence in Teaching (best teaching), University of Tennessee (2026)";
 
 export const primaryInstructor: Course[] = [
   {
