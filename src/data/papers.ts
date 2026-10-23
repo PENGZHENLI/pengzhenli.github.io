@@ -17,10 +17,10 @@ export const papersById: Record<string, Paper> = {
   jmp: {
     id: "jmp",
     title: "Measured Quality Falls Within the Firm: Market Access and Chinese Exports",
-    authors: "with James Lake",
+    authors: "",
     url: "/files/papers/jmp.pdf",
-    abstract: "This paper links the 2002 removal of tariff uncertainty on Chinese exports to the United States to a decline in measured quality within continuing export relationships. Comparing a firm's US and non-US shipments of the same product, measured quality falls by about 6 percent among cells that ship in both periods in the three years before an overlapping quota removal, and by about 11 percent in the full sample over the whole window, which contains that removal. Restricting the sample to cells that ship in both periods retains 83 percent of the full-window estimate and yields a decline twice as large as the full-sample estimate in the three clean years. The price and quantity responses reject a markup cut on an unchanged demand schedule. Measured quality is a demand residual built from price and quantity, so it does not distinguish physical downgrading from a cheaper mix of varieties. We develop a model in which improved access can extend a seller's reach to buyers below a sorting boundary, who lower the return to appeal. Under stated conditions, appeal is capped and can fall. The continuing-cell price and quantity pattern is consistent with this mechanism but does not identify it against other sources of a demand-residual shift.",
-    updated: "2026-10-07",
+    abstract: "This paper links the 2002 removal of tariff uncertainty on Chinese exports to the United States to a decline in measured quality within continuing export relationships. Comparing a firm's US and non-US shipments of the same product, measured quality falls by about 6 percent among cells that ship in both periods in the three years before an overlapping quota removal, and by about 11 percent in the full sample over the whole window, which contains that removal. Restricting the sample to cells that ship in both periods retains 83 percent of the full-window estimate and yields a decline twice as large as the full-sample estimate in the three clean years. The price and quantity responses are not those of a markup cut on an unchanged good, and the decline is not the input-tariff upgrading of the same years, which varies only within firm and year and is absorbed by the design. We develop a model in which improved access can extend a seller's reach to buyers below a sorting boundary, who lower the return to appeal. Under stated conditions, appeal is capped and can fall. The continuing-cell price and quantity pattern is consistent with this mechanism but does not identify it against other sources of a demand-residual shift.",
+    updated: "2026-10-22",
   },
   tri: {
     id: "tri",
@@ -43,13 +43,12 @@ export const papersById: Record<string, Paper> = {
   },
   endorse: {
     id: "endorse",
-    title: "A Mean-Field Game of Mayoral Endorsements: Identification and Evidence from Brazilian Coalitional Presidentialism",
+    title: "Estimating Mean-Field Games with a Payoff Threshold: Candidates and Party Lists in Brazil",
     authors: "with Matt Van Essen and Luiz Lima",
     note: "2024 J. Fred and Wilma Holly Award (best second-year paper).",
     url: "/files/papers/endorse.pdf",
-    slidesUrl: "/files/papers/endorse-slides.pdf",
-    abstract: "A mayor's return from endorsing a presidential candidate falls as other mayors endorse the same one, so endorsement is a strategic discrete-choice game that has gone structurally unestimated: among Brazil's 5,570 mayors the joint action space is too large to enumerate. Anonymity collapses the problem. When payoffs depend on rivals only through aggregate shares, equilibrium is a fixed point on the candidate simplex whose dimension does not grow with the number of players, and the model estimates by least squares in milliseconds. Estimating it on Brazil's 2014 election, we then show what the exercise does not buy: the prize parameter is algebraically the average log-odds of alignment rescaled by the share of mayors classified as aligned, so it changes sign with the classification rule. What survives is reduced form. A close-race difference-in-differences design puts discretionary transfers to co-partisan mayors 10.6 percent above those of other coalition members and finds no premium on the formula-based transfer that leaves no discretion to allocate.",
-    updated: "2026-08-26",
+    abstract: "Estimating a discrete-choice game of incomplete information means evaluating the joint action profile, which forecloses the settings such games describe: a Brazilian municipality fielding fifty-five council candidates across five lists has far too many action profiles to enumerate. We change the equilibrium concept rather than the algorithm. Anonymity makes the fixed point one dimension per list and none per candidate, and a discontinuous winner rule turns existence into a regime-consistency problem over proposed clearing sets, which we show can have no solution. Because a threshold pays several alternatives at once, two can be compared inside one market, and three log-odds contrasts identify the parameters with no probability of abstention anywhere in the estimator. At municipal scale the likelihood attenuates the coefficient on the anticipated chance of a seat, because a list's share is counted from a few dozen candidates, and a split-sample instrument on an unbiased reciprocal of that share recovers nine-tenths of it in simulation. On 926,900 Brazilian council candidacies the corrected coefficient is positive for non-incumbents and for all candidates, for every one of thirty-two demographic types, and with and without a control for local party strength; its magnitude under that control is not stable. Candidates with a university degree respond more to the chance of a seat than candidates without one, a difference found among non-incumbents and not among incumbents.",
+    updated: "2026-10-22",
   },
   safwelfare: {
     id: "safwelfare",
