@@ -16,10 +16,9 @@ export type Paper = {
 export const papersById: Record<string, Paper> = {
   jmp: {
     id: "jmp",
-    title: "Market Access and the Quality of Chinese Exports",
+    title: "Selling Down-Market: Market Access and the Quality of Chinese Exports",
     authors: "",
-    url: "/files/papers/jmp.pdf",
-    abstract: "This paper links the 2002 removal of tariff uncertainty on Chinese exports to the United States to a decline in measured quality within continuing export relationships. Comparing a firm's US and non-US shipments of the same product, measured quality falls by about 6 percent among cells that ship in both periods in the three years before an overlapping quota removal, and by about 11 percent in the full sample over the whole window, which contains that removal. Restricting the sample to cells that ship in both periods retains 83 percent of the full-window estimate and yields a decline twice as large as the full-sample estimate in the three clean years. The price and quantity responses are not those of a markup cut on an unchanged good, and the decline is not the input-tariff upgrading of the same years, which varies only within firm and year and is absorbed by the design. We develop a model in which improved access can extend a seller's reach to buyers below a sorting boundary, who lower the return to appeal. Under stated conditions, appeal is capped and can fall. The continuing-cell price and quantity pattern is consistent with this mechanism but does not identify it against other sources of a demand-residual shift.",
+    abstract: "Trade liberalization can change export quality through cheaper inputs or through access to foreign buyers. I study the latter, exploiting the 2001 US grant of permanent normal trade relations to China, which eliminated the threat of tariff increases that varied across products. Comparing the same firm's US and non-US sales of a product before and after 2002, I find that quality fell about 5 percent more in highly exposed products than in barely exposed ones. The fall appears on impact, does not detectably reverse, and has no counterpart in the EU. Prices fell, but quantities rose less than the price decline alone predicts. I develop a model in which access lets firms sell down-market, to buyers who value quality less.",
     updated: "2026-10-22",
   },
   tri: {
@@ -27,7 +26,7 @@ export const papersById: Record<string, Paper> = {
     title: "Trade Restrictiveness Indices with Discriminatory Tariffs",
     authors: "with James Lake",
     abstract: "A Trade Restrictiveness Index (TRI) is the uniform tariff that is welfare-equivalent to a country's actual tariff structure. Its standard implementation assigns a single tariff to each product, yet preferential trade agreements make tariffs on the same product differ across exporters, distorting where a country buys as well as what it buys. In an Armington model, we derive a TRI that separates these two distortions: for a small country, the squared index is, to second order, the square of the conventional index evaluated at mean product tariffs plus a term in the variance of tariffs across each product's exporters. We also derive the index for large importers, whose tariffs affect world prices. Across 123 importers over 2000–2020, the dispersion term accounts for 24 percent of the median importer's squared TRI in 2018, up from zero in the early 2000s. Preferences therefore reduce the TRI far less than they reduce average tariffs: in 2018 they cut the median importer's simple average tariff by 16 percent but its TRI by only 5 percent.",
-    updated: "2026-10-22",
+    updated: "2026-10-27",
   },
   shapley: {
     id: "shapley",
