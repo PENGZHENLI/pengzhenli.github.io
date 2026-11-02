@@ -28,6 +28,12 @@ export const papersById: Record<string, Paper> = {
     abstract: "A Trade Restrictiveness Index (TRI) is the uniform tariff that is welfare-equivalent to a country's actual tariff structure. Its standard implementation assigns a single tariff to each product, yet preferential trade agreements make tariffs on the same product differ across exporters, distorting where a country buys as well as what it buys. In an Armington model, we derive a TRI that separates these two distortions: for a small country, the squared index is, to second order, the square of the conventional index evaluated at mean product tariffs plus a term in the variance of tariffs across each product's exporters. We also derive the index for large importers, whose tariffs affect world prices. Across 123 importers over 2000–2020, the dispersion term accounts for 24 percent of the median importer's squared TRI in 2018, up from zero in the early 2000s. Preferences therefore reduce the TRI far less than they reduce average tariffs: in 2018 they cut the median importer's simple average tariff by 16 percent but its TRI by only 5 percent.",
     updated: "2026-10-27",
   },
+  tritwo: {
+    id: "tritwo",
+    title: "Trade Restrictiveness Indices 2.0",
+    authors: "with Massimiliano Cali, Aufa Doraset, James Lake and Laura Puzzello",
+    wip: true,
+  },
   shapley: {
     id: "shapley",
     title: "A Weight-Free Benchmark for Multilateral Tariff Bargaining",
