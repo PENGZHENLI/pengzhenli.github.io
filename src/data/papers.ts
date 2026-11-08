@@ -44,11 +44,18 @@ export const papersById: Record<string, Paper> = {
   },
   endorse: {
     id: "endorse",
-    title: "Estimating Large Games with a Payoff Threshold: Candidates and Party Lists in Brazil",
+    title: "The Impact of Mayoral Endorsements on Presidential Election Outcomes: Insights from Brazil",
     authors: "with Matt Van Essen and Luiz Lima",
     note: "2024 J. Fred and Wilma Holly Award (best second-year paper).",
-    abstract: "Estimating a discrete-choice game of incomplete information requires evaluating every joint action profile, which is infeasible when dozens of candidates interact, as in Brazilian council elections. We instead adopt a mean-field equilibrium, in which candidates affect one another only through list shares, reducing the fixed point to one dimension per list. Because seats go only to lists that clear a threshold, an equilibrium exists if and only if some proposed set of clearing lists is self-fulfilling, and we show that such a set need not exist. Since several lists can clear the threshold in the same market, within-market log-odds contrasts difference out unobserved list appeal and identify how responsiveness differs across candidate types. In markets of a few dozen candidates, sampling noise in list shares attenuates the maximum-likelihood estimate of the weight on the chance of a seat; a split-sample instrument removes most of this bias in simulations. Across 926,900 council candidacies, candidates favor lists with a better chance of a seat, and among non-incumbents the response is stronger for those with a university degree.",
+    abstract: "Brazilian mayors' endorsements are valuable to presidential candidates, and a mayor's return from endorsing depends on whom other mayors endorse, because the budgetary prize controlled by the winner is shared among the mayors who backed him. We model endorsements as a static discrete-choice game of incomplete information in which mayors act on public information and private preference shocks. With extreme-value shocks and the payoff from not endorsing normalized to zero, equilibrium endorsement probabilities map uniquely back to expected payoffs, and an exclusion restriction on payoffs identifies the structural parameters. We estimate the game by maximum likelihood with equilibrium constraints, which avoids computing every equilibrium at each trial parameter value. In Monte Carlo experiments the estimator recovers the structural parameters to within 1 percent and the equilibrium probabilities to within 0.1 percent. An application to a new textual dataset on Brazilian mayors' endorsements is planned.",
+    updated: "2026-11-07",
+  },
+  partylist: {
+    id: "partylist",
+    title: "Estimating Large Games with a Payoff Threshold: Candidates and Party Lists in Brazil",
+    authors: "with Matt Van Essen and Luiz Lima",
     updated: "2026-10-23",
+    wip: true,
   },
   safwelfare: {
     id: "safwelfare",
