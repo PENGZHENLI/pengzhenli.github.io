@@ -18,8 +18,9 @@ export const papersById: Record<string, Paper> = {
     id: "jmp",
     title: "Selling Down-Market: Market Access and the Quality of Chinese Exports",
     authors: "",
-    abstract: "Trade liberalization can change export quality through cheaper inputs or through access to foreign buyers. I study the latter, exploiting the 2001 US grant of permanent normal trade relations to China, which eliminated the threat of tariff increases that varied across products. Comparing the same firm's US and non-US sales of a product before and after 2002, I find that quality fell about 5 percent more in highly exposed products than in barely exposed ones. The fall appears on impact, does not detectably reverse, and has no counterpart in the EU. Prices fell, but quantities rose less than the price decline alone predicts. I develop a model in which access lets firms sell down-market, to buyers who value quality less.",
-    updated: "2026-10-22",
+    url: "/files/papers/jmp.pdf",
+    abstract: "Trade liberalization can change export quality through cheaper inputs or through access to foreign buyers. I study the latter, exploiting the 2001 US grant of permanent normal trade relations to China, which eliminated the threat of tariff increases that varied across products. Comparing the same firm's US and non-US sales of a product before and after 2002, I find that quality fell about 4.5 percent more in highly exposed products than in barely exposed ones. The fall appears on impact, does not detectably reverse, and has no counterpart in the EU. Prices fell, but quantities rose less than the price decline alone predicts. I develop a model in which access lets firms sell down-market, to buyers who value quality less.",
+    updated: "2026-11-12",
   },
   tri: {
     id: "tri",
